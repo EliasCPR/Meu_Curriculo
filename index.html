@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Meu_Curriculo/css/Tecnologia.css">
+    <link rel="stylesheet" href="/Meu_Curriculo/css/profile.css">
+    <link rel="stylesheet" href="/Meu_Curriculo/css/header.css">
+    <title>Meu curriculo</title>
+</head>
+<body>
+    <header>
+            <nav>
+                <a href="/" class="logo">Currículo</a>
+            </nav>
+    </header>
+    <main>
+        <section id="background">
+            <div class="container">
+                <img src="/Meu_Curriculo/assets/Elias.jpg" alt="ImagemPerfil" class="fotoPerfil" />
+                <h1 class="titulo-nome">Elias Mateus Prado Oliveira</h1>
+                <p class="texto-boas-vindas">
+                    Desenvolvedor e web Designer
+                </p>
+            </div>
+            <div class="container2">
+                <div class="sobreMim1">
+                    <h1 class="sobreMimTitulo">
+                        Sobre Mim
+                    </h1>
+                </div>
+                <div class="sobreMim2">
+                    <div class="descricao">
+                        <style>
+                            #descricao{
+                                max-width: 480px;
+                                text-align: center;
+                                margin: 60px auto;
+                                font-family: 'Special Elite',monospace;
+                                color:#fff;
+                            }
+                            #descricao::after{
+                                content: '|';
+                                margin-left: 5px;
+                                opacity: 1;
+                                animation: blink .7s infinite;
+                            }
+
+                            @keyframes blink {
+                                0%,100%{
+                                    opacity: 1;
+                                }
+
+                                50%{
+                                    opacity: 0;
+                                }
+                            }
+                        </style>
+                        <h1 id="descricao">
+                            Olá, meu nome é Elias, nasci em 06/02/2004, moro em Itapevi-SP.
+                            
+                            Procuro uma oportunidade
+                            para experiências desafiadoras em minha carreira de desenvolvedor web
+                            (programador). 
+
+                            Desejo colaborar em um ambiente de trabalho onde possa colocar em pratica meus conhecimentos em favor da empresa, 
+                            objetivando sempre o benefício e o crescimento da organização e o meu crescimento profissional.
+                            
+                        </h1>
+                        <script>
+
+                            function typeWrite(elemento) {
+                                const textoArray = elemento.innerHTML.split('');
+                                elemento.innerHTML = '';
+                                textoArray.forEach((letra, i) => {
+                                    setTimeout(() =>
+                                    elemento.innerHTML += letra, 75 * i)
+                                });
+                            }
+
+                            const titulo = document.getElementById('descricao');
+                            typeWrite(titulo);
+                        </script>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="background">
+            <div class="container3">
+                <div >
+                    <h1 class="techTitulo">
+                        Tecnologias
+                    </h1>
+                </div>
+                <main class="cards">
+                    <section class="card contact">
+                        <div class="icon">
+                            
+                        </div>
+                        <H1>HTML5</H1>
+                    </section>
+                    <section class="card contact">
+                        <div class="icon">
+                            
+                        </div>
+                        <H1>CSS3</H1>
+                    </section>
+                    <section class="card contact">
+                        <div class="icon">
+                            
+                        </div>
+                        <H1>javascript</H1>
+                    </section>
+                    <section class="card contact">
+                        <div class="icon">
+                            
+                        </div>
+                        <H1>ReactJS</H1>
+                    </section>
+                    <section class="card contact">
+                        <div class="icon">
+                            
+                        </div>
+                        <H1>NodeJS</H1>
+                    </section>
+                    <section class="card contact">
+                        <div class="icon">
+                            
+                        </div>
+                        <H1>PHP</H1>
+                    </section>
+                    <section class="card contact">
+                        <div class="icon">
+                            
+                        </div>
+                        <H1>Kotlin</H1>
+                    </section>
+                    <section class="card contact">
+                        <div class="icon">
+                            
+                        </div>
+                        <H1>Java</H1>
+                    </section>
+                    
+                </main>
+
+                <div >
+                    <h1 class="techTitulo">
+                        Competências
+                    </h1>
+                </div>
+                <main class="cards">
+                    <section class="card contact">
+                        <ul class="list_form">
+                            <li>Pontualidade e respeito a prazo.</li>
+                            <br>
+                            <li>Focado no objetivo</li>
+                            <br>
+                            <li>Organização</li>
+                            <br>
+                            <li>Trabalho em equipe</li>
+                        </ul>
+                    </section>
+            </div>
+        </section>
+
+        <footer>
+            <div>
+                <small>Copyright &copy; Elias Oliveira</small>
+            </div>
+            <div class="title">
+                <h2>Redes Sociais</h2>
+
+                <div>
+                    <ul class="list">
+                        <li><b>LinkedIn:</b> <a target="_blank" href = "https://www.linkedin.com/in/elias-oliveira-9aa4b51b1/">Elias Oliveira</a></li>
+                        <br>
+                        <li><b>GitHub:</b> <a target="_blank" href="https://github.com/EliasCPR">EliasCPR</a></li>
+                        <br>
+                        <li><b>WhatsApp:</b><a target="_blank" href="https://wa.me/qr/YS6K3AAKT3ILI1"> +11 93331-5866</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </main>
+    
+</body>
+</html>
